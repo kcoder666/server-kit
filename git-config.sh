@@ -7,3 +7,6 @@ git config --global alias.unstage 'reset HEAD --'
 git config --global alias.last 'log -1 HEAD'
 git config --global alias.stash-unapply '!git stash show -p | git apply -R'
 
+# Fix problem non-zero exit code of Vim for Git commit
+git config --global core.editor /usr/bin/vim
+
